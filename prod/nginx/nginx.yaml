@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   labels:
     app: web
-    version: fix2
+    version: fix3
   name: mynginx
 spec:
   replicas: 1
@@ -26,7 +26,7 @@ kind: Service
 metadata:
   labels:
     app: web
-    version: fix2
+    version: fix3
   name: mynginx
 spec:
   ports:
