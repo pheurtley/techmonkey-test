@@ -30,10 +30,9 @@ metadata:
   name: mynginx
 spec:
   ports:
-  - nodePort: 32223
     port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: web
-  type: NodePort
+  type: ClusterIP
